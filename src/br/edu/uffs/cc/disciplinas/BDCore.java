@@ -89,6 +89,36 @@ public class BDCore extends SQLiteOpenHelper {
 		bd.execSQL("insert into disciplina (descricao, semestre) values ('Trabalho de conclusão de curso I', 9);");
 
 		bd.execSQL("insert into disciplina (descricao, semestre) values ('Trabalho de conclusão de curso II', 10);");
+		
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (7, 1);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (9, 4);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (10, 2);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (11, 8);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (12, 5);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (13, 7);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (15, 1);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (17, 12);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (18, 10);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (19, 6);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (20, 1);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (21, 16);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (22, 15);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (22, 20);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (23, 13);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (25, 13);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (26, 5);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (26, 7);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (28, 22);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (30, 25);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (31, 8);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (31, 11);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (32, 25);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (34, 23);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (35, 18);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (38, 22);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (39, 35);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (40, 39);");
+		bd.execSQL("insert into disciplina_pre_requisito (id_disciplina, id_pre_requisito) values (43, 42);");
 	}
 
 	@Override
