@@ -12,7 +12,9 @@ public class AltDisciplinaActivity extends Activity {
 	private int operacao;
 	private EditText edDescricao;
 	private EditText edSemestre;
-	Disciplina disciplina;
+	private Disciplina disciplina;
+	
+	public static Object sender;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -77,10 +79,15 @@ public class AltDisciplinaActivity extends Activity {
 				bd.atualiza(disciplina);			
 				Toast.makeText(this, "Disciplina atualizada com sucesso.", Toast.LENGTH_SHORT).show();
 		}
-		finish();		
+		if (sender != null && sender instanceof ListDisciplinaActivity) {
+			((ListDisciplinaActivity)sender).atualizaLista();
+		}
+		sender = null;
+		finish();
 	}
 	
 	public void btCancelarClick(View view) {
+		sender = null;
 		finish();
 	}
 }

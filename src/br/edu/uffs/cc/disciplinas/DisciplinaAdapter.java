@@ -66,6 +66,8 @@ public class DisciplinaAdapter extends BaseAdapter {
 				intent.putExtra("descricao", lista.get(auxPosition).getDescricao());
 				intent.putExtra("semestre", lista.get(auxPosition).getSemestre());
 				intent.putExtra("concluida", lista.get(auxPosition).getConcluida());
+				
+				AltDisciplinaActivity.sender = context;
 				context.startActivity(intent);
 			}
 		});
