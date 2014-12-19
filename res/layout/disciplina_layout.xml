@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+	<Button
+	    android:id="@+id/btEditar"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_toLeftOf="@+id/btExcluir"
+	    android:text="@string/strEditar" />
+
+    <Button
+        android:id="@+id/btExcluir"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/strExcluir" />
+
+    <TextView
+        android:id="@+id/txtDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkConcluida"
+        android:layout_alignBottom="@+id/chkConcluida"
+        android:layout_toRightOf="@+id/chkConcluida"
+        android:text="@string/strDescricao" />
+
+    <CheckBox
+        android:id="@+id/chkConcluida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btEditar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:checked="false" />
+	
+</RelativeLayout>
+
